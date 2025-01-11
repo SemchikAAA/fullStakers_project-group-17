@@ -1,20 +1,29 @@
 .header {
 }
 .header-container {
+  display: flex;
+  justify-content: space-between;
 }
 .header-nav {
+  display: flex;
 }
 .logo {
   font-weight: 500;
   font-size: 20px;
   letter-spacing: -0.02em;
   color: #0c0c0c;
+  margin-right: 203px;
 }
 .header-nav-wraper {
 }
-.header-list {
+.header-nav-list {
+  display: flex;
+  gap: 40px;
 }
 .header-item {
 }
 .header-link {
+}
+.header-adres-list {
+  display: flex;
 }

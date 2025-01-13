@@ -1,0 +1,159 @@
+/* #region main reset */
+body {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #FFFFFF;
+    margin: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+  }
+  
+  a {
+    color: currentColor;
+    text-decoration: none;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  button {
+    cursor: pointer;
+    font-family: inherit;
+  }
+/* #endregion */
+
+/* #region desktop and main styles */
+.about-us {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+  /* Container */
+  .about-us-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 65px;
+    padding-right: 65px;
+    gap: 40px;
+  }
+  
+  /* Text Section */
+  .about-us-text {
+    flex: 1;
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 20px;
+  }
+  
+  .about-us-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #000000;
+    margin-bottom: 40px;
+  }
+  
+  .about-us-main-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(12, 12, 12, 0.7);
+    margin-bottom: 20px;
+  }
+  
+  .catalog-button {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #3350E9;
+    border-radius: 16px;
+    padding: 15px 37px 15px 38px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .catalog-button:hover {
+    background-color: #1F3CD4;  
+  }
+  
+  /* Image Section */
+  .about-us-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .picture-about-us {
+    border: 1px solid #000;
+    border-radius: 50px;
+    background: rgba(12, 12, 12, 0.2), url("./img/about-us/about-us-img-desktop.jpg");
+  }
+/* #endregion */
+
+/* #region tablet */
+@media (max-width: 768px) {
+  .about-us-container {
+    min-width: 704px;
+    max-width: 768px;
+    min-height: 512px;
+    padding: 0 32px;
+    flex-direction: column; 
+    gap: 75px; 
+    padding-bottom: 40x;
+    padding-top: 40px;
+  }
+
+  .about-us-text, 
+  .about-us-image {
+    width: 100%; 
+  }
+
+  .picture-about-us {
+    border-radius: 65px;
+    width: 704px;
+    height: 512px;
+  }
+}
+/* #endregion */
+
+/* #region mobile */
+@media (max-width: 375px) {
+  .about-us-container {
+    min-width: 320px;
+    max-width: 375px;
+    padding: 0 20px;
+    margin: 0 auto;
+    flex-direction: column; 
+    gap: 20px; 
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  .about-us-text, 
+  .about-us-image {
+    width: 100%; 
+  }
+
+  .about-us-text {
+    min-width: 335px;
+    min-height: 446px;
+  }
+
+  .picture-about-us {
+    border-radius: 30px;
+    width: 335px;
+    height: 446px;
+    background: rgba(12, 12, 12, 0.2), url("../img/about-us/about-us-img-mobile.jpg");
+  }
+}
+/* #endregion */
